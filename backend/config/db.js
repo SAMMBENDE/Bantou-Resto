@@ -8,12 +8,12 @@ const connectDB = async () => {
             useUnifiedTopology: true
         });
 
-        console.log("MongoDB connection SUCCESS");
+        console.log("MongoDB connection Success");
     } catch (error) {
         console.error("MongoDB connection FAIL");
         process.exit(1);
 
     }
-}
+};
 
 module.exports = connectDB;
